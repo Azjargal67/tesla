@@ -1,0 +1,152 @@
+* {  
+  font-family: sans-serif;  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}  
+
+.nav-container {  
+  position: fixed;  
+  top: 0;  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  width: 100%;  
+  padding-right: 30px;  
+  padding-left: 20px;  
+  height: 80px;  
+  color: #333;  
+  z-index: 1000;  
+}  
+
+.nav-container ul {  
+  display: flex;  
+  list-style: none;  
+  gap: 20px;  
+  font-size: 15px;  
+}  
+
+.nav-container ul li {  
+  cursor: pointer;  
+  transition: 0.5s;  
+  padding: 3px 10px;  
+  border-radius: 5px;  
+}  
+
+.nav-container ul li:hover {  
+  background-color: rgba(0, 0, 0, 0.5);  
+}  
+
+.logo {  
+  width: 120px;  
+  height: 30px;  
+  cursor: pointer;  
+  filter: brightness(0) invert(1);  
+}  
+
+.pages {  
+  display: flex;  
+  justify-content: center;  
+  list-style: none;  
+  text-align: center;  
+  flex-direction: column;  
+}  
+
+.pages li {  
+  position: relative;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: space-between;  
+}  
+
+.dropdown {  
+  position: relative;  
+}  
+
+.dropdown-menu {  
+  display: none;  
+  position: absolute;  
+  top: 30px;  
+  left: 0;  
+  background-color: #fff;  
+  padding: 10px;  
+  border-radius: 5px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.dropdown-menu a {  
+  display: block;  
+  padding: 5px 10px;  
+  text-decoration: none;  
+  color: #333;  
+}  
+
+.dropdown-menu a:hover {  
+  background-color: rgba(0, 0, 0, 0.1);  
+}  
+
+.dropdown:hover .dropdown-menu {  
+  display: block;  
+}  
+
+.main-container {  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-between;  
+  align-items: flex-start;  
+  gap: 20px;  
+  padding: 20px;  
+  margin: 0 auto;  
+  max-width: 1200px;  
+}  
+
+.vehicle-section {  
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 20px;  
+  flex: 3;  
+}  
+
+.vehicle-card {  
+  text-align: center;  
+  border: 1px solid #ddd;  
+  border-radius: 10px;  
+  padding: 20px;  
+  width: 250px;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+.vehicle-card:hover {  
+  transform: translateY(-10px);  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  
+}  
+
+.sidebar {  
+  flex: 1;  
+  border-left: 1px solid #ddd;  
+  padding-left: 20px;  
+  min-width: 200px;  
+  max-width: 300px;  
+}  
+
+.sidebar ul {  
+  list-style: none;  
+  padding: 0;  
+  margin: 0;  
+}  
+
+.sidebar ul li {  
+  margin-bottom: 15px;  
+}  
+
+.sidebar ul li a {  
+  text-decoration: none;  
+  color: #333;  
+  font-size: 16px;  
+  transition: color 0.3s ease;  
+}  
+
+.sidebar ul li a:hover {  
+  color: #0071c2;  
+  text-decoration: underline;  
+}
